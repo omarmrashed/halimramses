@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-family: 'Unbounded', cursive;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #f8f7f1;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+.navbar-light .navbar-nav .nav-link {
+    padding: 0px 25px;
+    font-size: 1.3rem;
+    
+
+}
+
+
+.headofhailm {
+    font-size:500%;
+    font-family: "Raleway", sans-serif;
+    width: 75%;
+     margin: 300px;
+     padding: 100px;
+ }
+ 
+ .para {
+     font-size:medium;
+ }
+   
+ 
+ .linee {
+     
+     width: 75%;
+  border: 2px solid black;
+  background-color: black;
+ }
+ /* arrows that appear text */
+
+ .arrow-container {
+    cursor: pointer;
+  }
+
+ 
+ .arrow {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid black; 
+ }
+
+
+  .text-container1 {
+    display: none;
+  }
+
+  .arrow1-container1 {
+    cursor: pointer;
+}
+
+.arrow1 {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid black;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+/* end of arrows  */
+
+  
+ .how-to {
+    padding: 5px 8px; /* Adjust padding */
+    font-size: 12px; /* Adjust font size */
+    width: 10px; /* Adjust width */
+}
+
+/* Style the dropdown options */
+.how-to option {
+    font-size: 12px; /* Adjust font size */
+    padding: 5px 8px; /* Adjust padding */
+}
+
+
+ 
+ .paragrph {
+     padding-top: 0px;
+     margin-top: 50px;
+     
+ }
+ 
+  
+ .paragraghtext{
+    font-family: "Open Sans", sans-serif;
+ }
+
+
+
+
+.carousel-control-next{
+    margin-right: 250px;
+   
+}
+
+
+
+
+
+ 
+ .footerline  {
+    width: 50%;
+    margin: auto;
+    margin-bottom:100cap;
+    border: 1px solid black;
+    margin-top: 370px ;
+    
+ 
+}
+.footbio {
+    width: 50%;
+    margin: auto;
+    margin-bottom:100cap;
+    border: 1px solid black;
+    margin-top: 370px ;
+ 
+}
+
+ 
+ 
+ 
+ 
+ 
