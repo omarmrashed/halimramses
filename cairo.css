@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Unbounded', cursive;
+    font-family: 'Unbounded', cursive ;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -9,13 +9,14 @@ body {
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
 }
+
+
 .navbar-light .navbar-nav .nav-link {
     padding: 0px 25px;
     font-size: 1.3rem;
-    
-
+    font-family: 'Unbounded', cursive;
+    font-weight: lighter;
 }
-
 
 .headofhailm {
     font-size:500%;
@@ -130,7 +131,59 @@ body {
 }
 
  
- 
- 
- 
- 
+@media (max-width: 768px) {
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 1.5rem; /* Reduce navbar font size for smaller screens */
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column; /* Stacks the columns vertically on mobile */
+        justify-content: center;
+        align-items: center; /* Center the content horizontally */
+    }
+
+    .col:first-child {
+        padding-top: 20pt; /* Adjust top padding */
+        margin-left: 0; /* Reset left margin */
+        margin-bottom: 20px; /* Add bottom margin to separate links from content */
+        text-align: left; /* Keep links aligned to the left */
+        width: 100%; /* Ensure links take full width */
+    }
+
+    .col:last-child {
+        padding-top: 20pt; /* Adjust top padding */
+        margin-left: 0; /* Reset left margin */
+        text-align: center; /* Center the content */
+        width: 100%; /* Ensure content takes full width */
+        max-width: 600px; /* Optional: Set a max-width to control content width */
+    }
+
+    /* Ensure images are responsive */
+    .col img {
+        width: 100%; /* Ensure images take full width */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 20px;
+    }
+
+    /* Footer adjustments */
+    .footerline {
+        width: 90%;
+        margin: 20px auto; /* Center the footer with some margin */
+    }
+}
+
+/* Additional media query for smaller devices */
+@media (max-width: 576px) {
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 1rem; /* Reduce navbar font size for smaller screens */
+    }
+
+    .col {
+        padding: 0 10px; /* Less padding on smaller screens */
+    }
+
+    .footerline {
+        width: 100%; /* Full width footer on very small screens */
+    }
+}
