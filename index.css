@@ -1,0 +1,153 @@
+/* General body styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #f8f7f1;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Flexbox container to ensure footer is at the bottom */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the content-wrapper takes at least the full height */
+}
+
+.navbar-light .navbar-nav .nav-link {
+    padding: 0px 25px;
+    font-size: 1.3rem;
+    font-family: 'Unbounded', cursive;
+    font-weight: lighter;
+}
+
+hr {
+    width: 80%;
+    border: 2px black solid;
+}
+
+.updates {
+    min-height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headofhailm {
+    font-size: 5rem; /* Adjusted for better responsiveness */
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    margin: 250px 0 450px 0 ; /* Adjusted margins for better centering */
+    padding: 50px;
+}
+
+.linee {
+    width: 75%;
+    border: 2px solid black;
+    background-color: black;
+}
+
+.paraghofbio {
+    margin: 100px 50px 20px 50px; /* Top margin for desktop */
+    font-size: 1.2rem; /* Adjusted for readability */
+    line-height: 1.5;
+    text-align: left; /* Ensure the text is left-aligned */
+}
+
+.paragraghtext {
+    margin: 20px 50px; /* Consistent margin for the Arabic text */
+    font-size: 1.2rem; /* Ensure readability */
+    line-height: 1.5;
+    text-align: left; /* Ensure the text is left-aligned */
+}
+
+.arrow-container {
+    cursor: pointer;
+    font-size: 1.2rem; /* Adjusted for better visibility */
+    margin-left: 10px;
+}
+
+.linkbio {
+    display: block; /* Ensures the link is treated as a block element */
+    margin: 20px 50px; /* Aligns the link under the Arabic text with consistent margins */
+    font-size: 1rem; /* Slightly smaller font size for the link */
+  
+    color: #007bff; /* Default link color */
+}
+
+.linkbio:hover {
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+/* Ensure the footer is at the bottom of the page */
+.footerline {
+    margin-top: auto; /* Pushes the footer to the bottom */
+    width: 75%;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 50px; /* Adjusted for spacing */
+}
+
+/* Styles for images with the same height and width */
+.image-container img {
+    width: 150px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image covers the entire area */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.image-container img:hover {
+    transform: scale(1.1); /* Increase size on hover */
+}
+
+/* Footer for other pages */
+.footbio {
+    width: 75%; /* Consistent with previous page */
+    margin: auto;
+    margin-top: 50px;
+    border: 1px solid black;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .headofhailm {
+        font-size: 3rem; /* Reduce font size on smaller screens */
+        margin: 50px auto; /* Adjusted margins */
+        padding: 20px;
+    }
+
+    .paraghofbio, .paragraghtext, .linkbio {
+        margin: 70px 20px 20px 20px; /* Reduced margins for smaller screens */
+        font-size: 1rem; /* Slightly smaller text for mobile screens */
+    }
+
+    .arrow-container {
+        font-size: 1rem; /* Adjusted arrow size for mobile screens */
+    }
+
+    .footerline, .footbio {
+        width: 90%; /* Adjusted width for mobile screens */
+        margin-top: 20px; /* Reduced top margin */
+    }
+
+    .updates {
+        flex-direction: column; /* Stack content vertically */
+        align-items: flex-start;
+    }
+
+    .image-container img {
+        width: 100px; /* Adjusted image size */
+        height: 100px; /* Adjusted image size */
+        margin: 10px auto; /* Center images */
+    }
+}
