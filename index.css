@@ -11,7 +11,7 @@ body, html {
     background-color: #f8f7f1;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
-    overflow-x: hidden;
+    
 }
 
 /* Flexbox container to ensure footer is at the bottom */
